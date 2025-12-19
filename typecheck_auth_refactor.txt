@@ -1,0 +1,89 @@
+﻿
+> vite-react-typescript-starter@0.0.0 typecheck
+> tsc --noEmit -p tsconfig.app.json
+
+src/components/auth/AuthLayout.tsx(3,1): error TS6133: 'motion' is declared but its value is never read.
+src/components/auth/SignInForm.tsx(2,35): error TS6133: 'CheckCircle' is declared but its value is never read.
+src/pages/admin/ApprovalsTab.tsx(5,21): error TS6133: 'AlertCircle' is declared but its value is never read.
+src/pages/admin/RecruitersTab.tsx(5,32): error TS6133: 'AlertCircle' is declared but its value is never read.
+src/pages/admin/VerificationTab.tsx(5,32): error TS6133: 'AlertTriangle' is declared but its value is never read.
+src/pages/AdminDashboard.tsx(6,11): error TS6133: 'Settings' is declared but its value is never read.
+src/pages/AdminDashboard.tsx(6,21): error TS6133: 'Download' is declared but its value is never read.
+src/pages/ApplicantsPage.tsx(28,7): error TS2448: Block-scoped variable 'loadApplications' used before its declaration.
+src/pages/ApplicantsPage.tsx(28,7): error TS2454: Variable 'loadApplications' is used before being assigned.
+src/pages/FaqPage.tsx(208,52): error TS2345: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<"all" | "candidates" | "recruiters" | "ads" | "verification">'.
+src/pages/FaqPage.tsx(327,61): error TS2339: Property 'permissions' does not exist on type 'User'.
+src/pages/ForgotPasswordPage.tsx(5,21): error TS6133: 'Clock' is declared but its value is never read.
+src/pages/ForRecruitersPage.tsx(535,61): error TS2339: Property 'permissions' does not exist on type 'User'.
+src/pages/JobDetailsPage.tsx(6,1): error TS6133: 'Input' is declared but its value is never read.
+src/pages/JobDetailsPage.tsx(266,18): error TS2345: Argument of type '(prev: Partial<Job>) => { jobDetails: { basicInfo: { jobTitle?: string | undefined; department?: string | undefined; numberOfOpenings?: number | undefined; employmentType?: string | undefined; workMode?: string | undefined; jobLevel?: string | undefined; }; location?: { ...; } | undefined; compensation?: { ...; } | ...' is not assignable to parameter of type 'SetStateAction<Partial<Job>>'.
+  Type '(prev: Partial<Job>) => { jobDetails: { basicInfo: { jobTitle?: string | undefined; department?: string | undefined; numberOfOpenings?: number | undefined; employmentType?: string | undefined; workMode?: string | undefined; jobLevel?: string | undefined; }; location?: { ...; } | undefined; compensation?: { ...; } | ...' is not assignable to type '(prevState: Partial<Job>) => Partial<Job>'.
+    Call signature return types '{ jobDetails: { basicInfo: { jobTitle?: string | undefined; department?: string | undefined; numberOfOpenings?: number | undefined; employmentType?: string | undefined; workMode?: string | undefined; jobLevel?: string | undefined; }; location?: { ...; } | undefined; compensation?: { ...; } | undefined; description?:...' and 'Partial<Job>' are incompatible.
+      The types of 'jobDetails.basicInfo.jobTitle' are incompatible between these types.
+        Type 'string | undefined' is not assignable to type 'string'.
+          Type 'undefined' is not assignable to type 'string'.
+src/pages/JobDetailsPage.tsx(279,18): error TS2345: Argument of type '(prev: Partial<Job>) => { jobDetails: { location: { city?: string | undefined; state?: string | undefined; country?: string | undefined; officeAddress?: string | undefined; }; basicInfo?: { ...; } | undefined; compensation?: { ...; } | undefined; description?: { ...; } | undefined; qualifications?: { ...; } | undefi...' is not assignable to parameter of type 'SetStateAction<Partial<Job>>'.
+  Type '(prev: Partial<Job>) => { jobDetails: { location: { city?: string | undefined; state?: string | undefined; country?: string | undefined; officeAddress?: string | undefined; }; basicInfo?: { ...; } | undefined; compensation?: { ...; } | undefined; description?: { ...; } | undefined; qualifications?: { ...; } | undefi...' is not assignable to type '(prevState: Partial<Job>) => Partial<Job>'.
+    Call signature return types '{ jobDetails: { location: { city?: string | undefined; state?: string | undefined; country?: string | undefined; officeAddress?: string | undefined; }; basicInfo?: { jobTitle: string; department: string; numberOfOpenings: number; employmentType: string; workMode: string; jobLevel: string; } | undefined; compensation...' and 'Partial<Job>' are incompatible.
+      The types of 'jobDetails.basicInfo' are incompatible between these types.
+        Type '{ jobTitle: string; department: string; numberOfOpenings: number; employmentType: string; workMode: string; jobLevel: string; } | undefined' is not assignable to type '{ jobTitle: string; department: string; numberOfOpenings: number; employmentType: string; workMode: string; jobLevel: string; }'.
+          Type 'undefined' is not assignable to type '{ jobTitle: string; department: string; numberOfOpenings: number; employmentType: string; workMode: string; jobLevel: string; }'.
+src/pages/JobDetailsPage.tsx(292,18): error TS2345: Argument of type '(prev: Partial<Job>) => { jobDetails: { description: { roleSummary?: string | undefined; responsibilities?: string[] | undefined; requiredSkills?: string[] | undefined; }; basicInfo?: { ...; } | undefined; location?: { ...; } | undefined; compensation?: { ...; } | undefined; qualifications?: { ...; } | undefined; };...' is not assignable to parameter of type 'SetStateAction<Partial<Job>>'.
+  Type '(prev: Partial<Job>) => { jobDetails: { description: { roleSummary?: string | undefined; responsibilities?: string[] | undefined; requiredSkills?: string[] | undefined; }; basicInfo?: { ...; } | undefined; location?: { ...; } | undefined; compensation?: { ...; } | undefined; qualifications?: { ...; } | undefined; };...' is not assignable to type '(prevState: Partial<Job>) => Partial<Job>'.
+    Call signature return types '{ jobDetails: { description: { roleSummary?: string | undefined; responsibilities?: string[] | undefined; requiredSkills?: string[] | undefined; }; basicInfo?: { jobTitle: string; department: string; numberOfOpenings: number; employmentType: string; workMode: string; jobLevel: string; } | undefined; location?: { ......' and 'Partial<Job>' are incompatible.
+      The types of 'jobDetails.basicInfo' are incompatible between these types.
+        Type '{ jobTitle: string; department: string; numberOfOpenings: number; employmentType: string; workMode: string; jobLevel: string; } | undefined' is not assignable to type '{ jobTitle: string; department: string; numberOfOpenings: number; employmentType: string; workMode: string; jobLevel: string; }'.
+          Type 'undefined' is not assignable to type '{ jobTitle: string; department: string; numberOfOpenings: number; employmentType: string; workMode: string; jobLevel: string; }'.
+src/pages/JobDetailsPage.tsx(305,18): error TS2345: Argument of type '(prev: Partial<Job>) => { jobDetails: { qualifications: { minimumEducation?: string | undefined; preferredEducation?: string | undefined; yearsOfExperience?: number | undefined; }; basicInfo?: { ...; } | undefined; location?: { ...; } | undefined; compensation?: { ...; } | undefined; description?: { ...; } | undefin...' is not assignable to parameter of type 'SetStateAction<Partial<Job>>'.
+  Type '(prev: Partial<Job>) => { jobDetails: { qualifications: { minimumEducation?: string | undefined; preferredEducation?: string | undefined; yearsOfExperience?: number | undefined; }; basicInfo?: { ...; } | undefined; location?: { ...; } | undefined; compensation?: { ...; } | undefined; description?: { ...; } | undefin...' is not assignable to type '(prevState: Partial<Job>) => Partial<Job>'.
+    Call signature return types '{ jobDetails: { qualifications: { minimumEducation?: string | undefined; preferredEducation?: string | undefined; yearsOfExperience?: number | undefined; }; basicInfo?: { jobTitle: string; ... 4 more ...; jobLevel: string; } | undefined; location?: { ...; } | undefined; compensation?: { ...; } | undefined; descripti...' and 'Partial<Job>' are incompatible.
+      The types of 'jobDetails.basicInfo' are incompatible between these types.
+        Type '{ jobTitle: string; department: string; numberOfOpenings: number; employmentType: string; workMode: string; jobLevel: string; } | undefined' is not assignable to type '{ jobTitle: string; department: string; numberOfOpenings: number; employmentType: string; workMode: string; jobLevel: string; }'.
+          Type 'undefined' is not assignable to type '{ jobTitle: string; department: string; numberOfOpenings: number; employmentType: string; workMode: string; jobLevel: string; }'.
+src/pages/JobDetailsPage.tsx(407,82): error TS2339: Property '_id' does not exist on type 'User'.
+src/pages/JobDetailsPage.tsx(472,38): error TS2339: Property 'isVerified' does not exist on type '{ _id: string; profile: { fullName: string; company: { name: string; description: string; }; }; }'.
+src/pages/JobDetailsPage.tsx(746,19): error TS2322: Type 'void' is not assignable to type 'ReactNode'.
+src/pages/jobseeker/JobSeekerApplications.tsx(3,3): error TS6133: 'Briefcase' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerApplications.tsx(3,29): error TS6133: 'DollarSign' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerApplications.tsx(4,25): error TS6133: 'AlertCircle' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerApplications.tsx(4,51): error TS6133: 'ChevronUp' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerApplications.tsx(5,3): error TS6133: 'Filter' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerApplications.tsx(5,11): error TS6133: 'Eye' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerBrowseJobs.tsx(3,30): error TS6133: 'Clock' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerLayout.tsx(1,31): error TS6133: 'useRef' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerLayout.tsx(4,3): error TS6133: 'ChevronUp' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerNotifications.tsx(3,42): error TS6133: 'Clock' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerNotifications.tsx(3,73): error TS6133: 'AlertCircle' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerNotifications.tsx(75,9): error TS6133: 'getNotificationColor' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerOverview.tsx(3,3): error TS6133: 'MapPin' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerOverview.tsx(3,11): error TS6133: 'DollarSign' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerOverview.tsx(4,27): error TS6133: 'Phone' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerOverview.tsx(22,9): error TS6133: 'getThemeClasses' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerOverview.tsx(49,9): error TS6133: 'getStatusIcon' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerOverview.tsx(89,9): error TS6133: 'handleShareProfile' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerSettings.tsx(3,9): error TS6133: 'Globe' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerSettings.tsx(3,22): error TS6133: 'CreditCard' is declared but its value is never read.
+src/pages/jobseeker/JobSeekerSettings.tsx(4,11): error TS6133: 'Mail' is declared but its value is never read.
+src/pages/NotificationsPage.tsx(26,7): error TS2448: Block-scoped variable 'loadNotifications' used before its declaration.
+src/pages/NotificationsPage.tsx(26,7): error TS2454: Variable 'loadNotifications' is used before being assigned.
+src/pages/NotificationsPage.tsx(44,15): error TS18046: 'n' is of type 'unknown'.
+src/pages/NotificationsPage.tsx(45,18): error TS18046: 'n' is of type 'unknown'.
+src/pages/NotificationsPage.tsx(46,20): error TS18046: 'n' is of type 'unknown'.
+src/pages/NotificationsPage.tsx(47,17): error TS18046: 'n' is of type 'unknown'.
+src/pages/NotificationsPage.tsx(48,23): error TS18046: 'n' is of type 'unknown'.
+src/pages/PublicCandidateProfile.tsx(5,51): error TS6133: 'Mail' is declared but its value is never read.
+src/pages/PublicCandidateProfile.tsx(156,9): error TS6133: 'profileUrl' is declared but its value is never read.
+src/pages/recruiter/RecruiterApplicants.tsx(1,20): error TS6133: 'useMemo' is declared but its value is never read.
+src/pages/recruiter/RecruiterApplicants.tsx(3,19): error TS6133: 'Smartphone' is declared but its value is never read.
+src/pages/recruiter/RecruiterApplicants.tsx(4,19): error TS6133: 'ChevronRight' is declared but its value is never read.
+src/pages/recruiter/RecruiterApplicants.tsx(4,33): error TS6133: 'GraduationCap' is declared but its value is never read.
+src/pages/recruiter/RecruiterApplicants.tsx(4,61): error TS6133: 'Download' is declared but its value is never read.
+src/pages/recruiter/RecruiterApplicants.tsx(4,71): error TS6133: 'MessageSquare' is declared but its value is never read.
+src/pages/recruiter/RecruiterApplicants.tsx(5,3): error TS6133: 'Linkedin' is declared but its value is never read.
+src/pages/recruiter/RecruiterApplicants.tsx(5,13): error TS6133: 'Github' is declared but its value is never read.
+src/pages/recruiter/RecruiterApplicants.tsx(5,21): error TS6133: 'ExternalLink' is declared but its value is never read.
+src/pages/recruiter/RecruiterCompany.tsx(2,70): error TS6133: 'Clock' is declared but its value is never read.
+src/pages/recruiter/RecruiterJobs.tsx(1,100): error TS6133: 'Edit' is declared but its value is never read.
+src/pages/recruiter/RecruiterJobs.tsx(1,106): error TS6133: 'Eye' is declared but its value is never read.
+src/pages/recruiter/RecruiterJobs.tsx(1,111): error TS6133: 'Trash2' is declared but its value is never read.
+src/pages/recruiter/RecruiterJobs.tsx(2,1): error TS6133: 'Card' is declared but its value is never read.
